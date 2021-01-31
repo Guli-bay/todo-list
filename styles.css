@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Imbue:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url(./bg.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100px;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.container {
+	margin: 0 auto;
+	width: 1000px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	font-family:  'Imbue', serif;
+	font-size: 45px;
+	color: #2E8B57;
+	text-shadow: 1px 1px 3px #fff;
+}
+/*
+ 1 em, rem = 16px; */
+.mainBlock {
+	width: 800px;
+	background-color: #B9D6AD;
+	box-shadow: 0 0 30px; rgba(0, 0, 0, 0, 5);
+	opacity: 0.9;
+	margin-bottom: 2em;
+	padding-left: 3em;
+	padding-right: 3em;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+/* grid - row, column га болот */
+/* gap - бул отступ */
+.mainBlock div {
+	display: grid;
+	grid-template-columns: 3fr 1fr 1fr;
+	grid-column-gap: 5px;
+}
+
+.textIn {
+	height: 2em;
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+input,
+ button {
+	outline: none;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1em;
+}
+
+.btn {
+	width: 24px;
+	cursor: pointer;
+}
+
+.taskItem {
+	display: grid;
+	grid-template-columns: 9fr 1fr 1fr;
+	margin-bottom: 10px;
+	text-decoration: none;
+}
+/*
+.done {
+    text-decoration: line-through;
+}*/
+
+.taskItem-done {
+	display: grid;
+	grid-template-columns: 9fr 1fr 1fr;
+	margin-bottom: 10px;
+	text-decoration: line-through;
+}
